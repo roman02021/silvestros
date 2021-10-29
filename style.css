@@ -1,0 +1,30 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(src/brushci.ttf);
+}
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+.mountain-container {
+    position: relative;
+}
+.layer {
+    position: absolute;
+}
+.full-hora {
+    z-index: 0;
+    top: 0;
+}
+.trees {
+    z-index: 1;
+    top: 0;
+}
+.mountain {
+    z-index: 3;
+    top: 0;
+}
+h1 {
+    font-family: myFirstFont;
+}
