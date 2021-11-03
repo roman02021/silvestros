@@ -18,11 +18,11 @@ body {
     top: 0;
 }
 .trees {
-    z-index: 1;
+    z-index: 4;
     top: 0;
 }
 .mountain {
-    z-index: 3;
+    z-index: 2;
     top: 0;
 }
 h1 {
