@@ -10,5 +10,6 @@ window.addEventListener('scroll', (e) => {
     // a += 3;
     // b -= 3;
     mountain.style.transform = `translateY(${-window.scrollY / 5}px)`;
+    trees.style.transform = `translateY(${-window.scrollY / 4}px)`;
     // trees.style.top = `${a}px`;
 });
