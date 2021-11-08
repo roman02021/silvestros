@@ -12,7 +12,9 @@ body {
 }
 .layer {
     position: absolute;
-    max-width: 100vw;
+    max-width: 100%;
+    transition: transform 1s linear;
+    transform: translateY(0);
 }
 .vid {
     max-width: 100%;
@@ -22,11 +24,11 @@ body {
     top: 0;
 }
 .trees {
-    z-index: auto;
+    z-index: 5;
     top: 0;
 }
 .mountain {
-    z-index: 100;
+    z-index: 0;
     top: 0;
 }
 h1 {
