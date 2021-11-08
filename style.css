@@ -14,17 +14,21 @@ body {
     position: absolute;
 }
 .full-hora {
-    z-index: 0;
+    position: relative;
     top: 0;
 }
 .trees {
-    z-index: 4;
+    z-index: auto;
     top: 0;
 }
 .mountain {
-    z-index: 2;
+    z-index: 100;
     top: 0;
 }
 h1 {
     font-family: myFirstFont;
+}
+
+.cave-container{
+    position: absolute;
 }
