@@ -8,21 +8,48 @@
         <link href="style.css" rel="stylesheet" />
     </head>
     <body>
-        <!-- <div class="header-title">
-            <h1>Silvestrovska chata</h1>
-            <h2>28.12.2021 - 2.1.2022</h2>
-        </div> -->
+        <header class="headings-container">
+            <div class="headings">
+                <svg viewBox="0 0 1000 250" width="1000" height="250">
+                    <path id="curve" d="M13,242 C191,129 801,142 991,219" />
+                    <text width="500" class="main-heading">
+                        <textPath
+                            xlink:href="#curve"
+                            class="test"
+                            text-anchor="middle"
+                            startOffset="50%"
+                        >
+                            Silvestrovska chata
+                        </textPath>
+                    </text>
+                </svg>
+                <svg
+                    viewBox="0 0 1000 400"
+                    width="1000"
+                    height="250"
+                    class="main-subheading-container"
+                >
+                    <path id="curve" d="M13,242 C191,129 801,142 991,219" />
+                    <text width="500" class="main-subheading">
+                        <textPath
+                            xlink:href="#curve"
+                            class="test"
+                            text-anchor="middle"
+                            startOffset="50%"
+                        >
+                            28.12.2021 - 2.1.2022
+                        </textPath>
+                    </text>
+                </svg>
+            </div>
+        </header>
         <div class="mountain-container">
             <img class="full-hora layer" src="imgs/halfhora.png" />
             <img class="mountain layer" src="imgs/horalayer2odstranene.png" />
             <img class="trees layer" src="imgs/horalayer1.png" />
         </div>
-        <video autoplay loop muted class="vid">
-            <source src="imgs/final.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-        </video>
+
         <div class="signpost-container">
-            <img src="imgs/" />
             <div class="pole">
                 <button>tajny</button>
                 <button>jedlo</button>
@@ -30,16 +57,23 @@
                 <button>ubytovanie</button>
             </div>
         </div>
-        <div class="cave-container">
-            <h1></h1>
-            <img src="imgs/" />
+        <div class="caveman-container">
+            <h1 class="caveman-heading heading">Alko Catching</h1>
+            <video autoplay loop muted class="caveman-vid">
+                <source src="imgs/final.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
         </div>
         <div class="quiz-container">
-            <img src="imgs/" />
-            <h1></h1>
+            <img src="imgs/lightbulb.png" class="lightbulb" />
+            <div class="lightbulb-glow"></div>
+            <h1 class="heading quiz-heading">Chatový kvíz</h1>
             <div class="question-container">
-                <img src="imgs/" />
-                <button>.</button>
+                <img class="q-mark1 q-mark" src="imgs/question-mark.png" />
+                <img class="q-mark2 q-mark" src="imgs/question-mark.png" />
+                <img class="q-mark3 q-mark" src="imgs/question-mark.png" />
+                <img class="q-mark4 q-mark" src="imgs/question-mark.png" />
+                <img class="q-mark5 q-mark" src="imgs/question-mark.png" />
             </div>
         </div>
 

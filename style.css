@@ -1,7 +1,12 @@
 @font-face {
-    font-family: myFirstFont;
-    src: url(src/brushci.ttf);
+    font-family: 'TheFont';
+    src: url('/src/BrushScriptMT.woff2') format('woff2'),
+        url('./src/BrushScriptMT.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -9,11 +14,13 @@ body {
 }
 .mountain-container {
     position: relative;
+    height: 2500px;
 }
 .layer {
     position: absolute;
     max-width: 100%;
-    transition: transform 1s linear;
+    width: 100%;
+    transition: transform 0.2s linear;
     transform: translateY(0);
 }
 .vid {
@@ -31,10 +38,145 @@ body {
     z-index: 0;
     top: 0;
 }
-h1 {
-    font-family: myFirstFont;
-}
 
 .cave-container {
     position: absolute;
+}
+.headings-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.headings {
+    position: absolute;
+    z-index: 1000;
+    text-align: center;
+    top: 450px;
+    max-width: min-content;
+}
+.main-heading {
+    font-size: 150px;
+    background-color: white;
+    color: white;
+}
+.main-subheading-container {
+    position: relative;
+    top: -50px;
+}
+.main-subheading {
+    font-size: 100px;
+    position: relative;
+    top: -50px;
+}
+.main-heading,
+.main-subheading {
+    font-family: 'TheFont';
+    color: white;
+    text-align: center;
+    cursor: default;
+    user-select: none;
+    fill: white;
+}
+.test {
+    text-align: center;
+}
+path {
+    fill: transparent;
+}
+.signpost-container {
+    background-image: url('/imgs/post-background-3.png');
+    height: 2450px;
+    position: relative;
+}
+
+.pole {
+}
+
+.caveman-container {
+    position: relative;
+    text-align: center;
+    height: 1180px;
+}
+.heading {
+    font-family: 'TheFont';
+    color: white;
+    font-size: 150px;
+}
+.caveman-heading {
+    position: absolute;
+    user-select: none;
+    width: 100%;
+    top: -125px;
+}
+.caveman-vid {
+    width: 100%;
+}
+.quiz-container {
+    background-image: url('/imgs/last-background.png');
+    height: 5000px;
+    display: flex;
+    align-items: center;
+}
+.lightbulb {
+    position: absolute;
+}
+.quiz-heading {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    user-select: none;
+    pointer-events: none;
+}
+.question-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+.q-mark {
+    position: absolute;
+}
+.q-mark1 {
+    top: 150px;
+    right: 100px;
+}
+.q-mark2 {
+    width: 50px;
+    right: 200px;
+}
+.q-mark3 {
+    right: 400px;
+    top: 200px;
+}
+.q-mark4 {
+    width: 70px;
+    right: 350px;
+    top: 0px;
+}
+.q-mark5 {
+    right: 200px;
+    top: 450px;
+}
+.lightbulb-glow {
+    background: radial-gradient(
+        circle,
+        rgba(195, 188, 34, 1) 0%,
+        rgba(195, 188, 34, 0) 60%
+    );
+    opacity: 0;
+    position: relative;
+    left: 50px;
+    top: 30px;
+    width: 800px;
+    height: 800px;
+    transition: all 1s linear;
+}
+.lightbulb-glow:hover {
+    background: radial-gradient(
+        circle,
+        rgba(195, 188, 34, 1) 0%,
+        rgba(195, 188, 34, 0) 60%
+    );
+    opacity: 1;
+    transition: all 1s linear;
 }
