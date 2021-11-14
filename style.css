@@ -116,6 +116,7 @@ path {
     height: 5000px;
     display: flex;
     align-items: center;
+    position: relative;
 }
 .lightbulb {
     position: absolute;
